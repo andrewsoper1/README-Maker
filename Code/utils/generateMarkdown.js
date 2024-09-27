@@ -56,25 +56,25 @@ function renderLicenseLink(license) {
 
 function renderLicenseSection(license) {
     if (license === 'Apache 2.0') {
-      return `${license}`;
+      return `This project is licensed under${license}`;
     }
     else if (license === 'Boost 1.0') {
-      return `${license}`;
+      return `This project is licensed under${license}`;
     }
     else if (license === 'GNU AGPL v3.0') {
-      return `${license}`;
+      return `This project is licensed under${license}`;
     }
     else if (license === 'GNU GPL v3.0') {
-      return `${license}`;
+      return `This project is licensed under${license}`;
     }
     else if (license === 'GNU LGPL v3.0') {
-      return `${license}`;
+      return `This project is licensed under${license}`;
     } 
     else if (license === 'MIT') {
-      return `${license}`;
+      return `This project is licensed under${license}`;
     }
     else if (license === 'Mozilla 2.0') {
-      return `${license}`
+      return `This project is licensed under${license}`;
     }
     else {
       return '';
@@ -85,37 +85,37 @@ function renderLicenseSection(license) {
   
 function generateMarkdown(data) {
 return `# ${data.title}
-${renderLicenseBadge(data.license)}
-${renderLicenseLink(data.license)}
-#  Description
-${data.description}
+${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
+
+## Description
+    ${data.description}
   
-# Table of Contents
-* [Installation](#-Installation)
-* [Usage](#-Usage)
-* [License](#-License)
-* [Contributing](#-Contributing)
-* [Tests](#-Tests)
-* [Questions](#-Contact-Information)
+## Table of Contents
+* [Installation](#-installation)
+* [Usage](#-usage)
+* [License](#-license)
+* [Contributing](#-contributing)
+* [Tests](#-tests)
+* [Questions](#-contact-information)
     
-# Installation
-${data.installation}
+## Installation
+    ${data.installation}
   
-# Usage
-${data.usage}
+## Usage
+    ${data.usage}
   
-# License
-${renderLicenseSection(data.license)}
+## License
+    ${renderLicenseSection(data.license)}
   
-# Contributing
-${data.contributing}
+## Contributing
+    ${data.contributing}
   
-# Tests
-${data.tests}
+## Tests
+    ${data.tests}
   
-# Contact Information
-* GitHub Username: ${data.userName}
-* Contact Email: ${data.email}
+## Contact Information
+    * GitHub Username: ${data.userName}
+    * Contact Email: ${data.email}
     
   
 `;
