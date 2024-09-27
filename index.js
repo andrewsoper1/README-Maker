@@ -1,4 +1,3 @@
-
 import fs from 'fs';
 import inquirer from 'inquirer';
 import generateMarkdown  from './utils/generateMarkdown.js';
