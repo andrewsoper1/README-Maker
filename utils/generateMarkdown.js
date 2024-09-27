@@ -1,24 +1,24 @@
 function renderLicenseBadge(license) {
     if (license === 'Apache 2.0') {
-        return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
+        return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
     }
     else if (license === 'Boost 1.0') {
-        return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]';
+        return '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)';
     }
     else if (license === 'GNU AGPL v3.0') {
-        return '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)]';
+        return '![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)';
     }
     else if (license === 'GNU GPL v3.0') {
-        return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
+        return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)';
     }
     else if (license === 'GNU LGPL v3.0') {
-        return '[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)]';
+        return '![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)';
     } 
     else if (license === 'MIT') {
-        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`; //return ''
+        return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`; 
     }
     else if (license === 'Mozilla 2.0') {
-        return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]'
+        return '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
     }
     else {
         return '';
@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
         return '(https://opensource.org/licenses/Apache-2.0)';
     }
     else if (license === 'Boost 1.0') {
-        return '(https://www.boost.org/LICENSE_1_0.txt)]';
+        return '(https://www.boost.org/LICENSE_1_0.txt)';
     }
     else if (license === 'GNU AGPL v3.0') {
         return '(https://www.gnu.org/licenses/agpl-3.0)';
@@ -84,41 +84,41 @@ function renderLicenseSection(license) {
   
   
 function generateMarkdown(data) {
-    return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
-    ${renderLicenseLink(data.license)}
-    #  Description
-    ${data.description}
+return `# ${data.title}
+${renderLicenseBadge(data.license)}
+${renderLicenseLink(data.license)}
+#  Description
+${data.description}
   
-    # Table of Contents
-    * [Installation](#-Installation)
-    * [Usage](#-Usage)
-    * [License](#-License)
-    * [Contributing](#-Contributing)
-    * [Tests](#-Tests)
-    * [Questions](#-Contact-Information)
+# Table of Contents
+* [Installation](#-Installation)
+* [Usage](#-Usage)
+* [License](#-License)
+* [Contributing](#-Contributing)
+* [Tests](#-Tests)
+* [Questions](#-Contact-Information)
     
-    # Installation
-    ${data.installation}
+# Installation
+${data.installation}
   
-    # Usage
-    ${data.usage}
+# Usage
+${data.usage}
   
-    # License
-    ${renderLicenseSection(data.license)}
+# License
+${renderLicenseSection(data.license)}
   
-    # Contributing
-    ${data.contributing}
+# Contributing
+${data.contributing}
   
-    # Tests
-    ${data.tests}
+# Tests
+${data.tests}
   
-    # Contact Information
-    * GitHub Username: ${data.userName}
-    * Contact Email: ${data.email}
+# Contact Information
+* GitHub Username: ${data.userName}
+* Contact Email: ${data.email}
     
   
-  `;
+`;
 }
   
 export default generateMarkdown;
