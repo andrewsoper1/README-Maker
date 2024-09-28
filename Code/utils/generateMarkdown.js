@@ -91,29 +91,29 @@ ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
     ${data.description}
   
 ## Table of Contents
-* [Installation](#-installation)
-* [Usage](#-usage)
-* [License](#-license)
-* [Contributing](#-contributing)
-* [Tests](#-tests)
-* [Questions](#-contact-information)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Questions)
     
-## Installation
+## <a id='Installation'></a>Installation
     ${data.installation}
   
-## Usage
+## <a id='Usage'></a>Usage
     ${data.usage}
   
-## License
+## <a id='License'></a>License
     ${renderLicenseSection(data.license)}
   
-## Contributing
+## <a id='Contributing'></a>Contributing
     ${data.contributing}
   
-## Tests
+## <a id='Tests'></a>Tests
     ${data.tests}
   
-## Contact Information
+## <a id ='Questions'></a> Questions
     * GitHub Username: ${data.userName}
     * Contact Email: ${data.email}
     
