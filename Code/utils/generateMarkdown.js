@@ -1,52 +1,24 @@
 function renderLicenseBadge(license) {
     if (license === 'Apache 2.0') {
-        return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
+        return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
     }
     else if (license === 'Boost 1.0') {
-        return '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)';
+        return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
     }
     else if (license === 'GNU AGPL v3.0') {
-        return '![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)';
+        return '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)';
     }
     else if (license === 'GNU GPL v3.0') {
-        return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)';
+        return '![![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
     }
     else if (license === 'GNU LGPL v3.0') {
-        return '![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)';
+        return '[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)';
     } 
     else if (license === 'MIT') {
-        return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`; 
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`; 
     }
     else if (license === 'Mozilla 2.0') {
-        return '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
-    }
-    else {
-        return '';
-    }
-};
-  
-  
-function renderLicenseLink(license) {
-    if (license === 'Apache 2.0') {
-        return '(https://opensource.org/licenses/Apache-2.0)';
-    }
-    else if (license === 'Boost 1.0') {
-        return '(https://www.boost.org/LICENSE_1_0.txt)';
-    }
-    else if (license === 'GNU AGPL v3.0') {
-        return '(https://www.gnu.org/licenses/agpl-3.0)';
-    }
-    else if (license === 'GNU GPL v3.0') {
-        return '(https://www.gnu.org/licenses/gpl-3.0)';
-    }
-    else if (license === 'GNU LGPL v3.0') {
-        return '(https://www.gnu.org/licenses/lgpl-3.0)';
-    } 
-    else if (license === 'MIT') {
-        return `(https://opensource.org/licenses/MIT)`;
-    }
-    else if (license === 'Mozilla 2.0') {
-        return '(https://opensource.org/licenses/MPL-2.0)'
+        return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
     }
     else {
         return '';
@@ -54,27 +26,28 @@ function renderLicenseLink(license) {
 };
   
 
+
 function renderLicenseSection(license) {
     if (license === 'Apache 2.0') {
-      return `This project is licensed under${license}`;
+      return `This project is licensed under ${license}`;
     }
     else if (license === 'Boost 1.0') {
-      return `This project is licensed under${license}`;
+      return `This project is licensed under ${license}`;
     }
     else if (license === 'GNU AGPL v3.0') {
-      return `This project is licensed under${license}`;
+      return `This project is licensed under ${license}`;
     }
     else if (license === 'GNU GPL v3.0') {
-      return `This project is licensed under${license}`;
+      return `This project is licensed under ${license}`;
     }
     else if (license === 'GNU LGPL v3.0') {
-      return `This project is licensed under${license}`;
+      return `This project is licensed under ${license}`;
     } 
     else if (license === 'MIT') {
-      return `This project is licensed under${license}`;
+      return `This project is licensed under ${license}`;
     }
     else if (license === 'Mozilla 2.0') {
-      return `This project is licensed under${license}`;
+      return `This project is licensed under ${license}`;
     }
     else {
       return '';
@@ -85,7 +58,7 @@ function renderLicenseSection(license) {
   
 function generateMarkdown(data) {
 return `# ${data.title}
-${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
+${renderLicenseBadge(data.license)}
 
 ## Description
     ${data.description}
