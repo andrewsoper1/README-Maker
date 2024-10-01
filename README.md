@@ -38,9 +38,10 @@ Technologies Used:
 ```
 
 ```md
-Below is a screenshot and video of the app being used inside the command line:
-<src
+Below is a video of the app being used inside the command line:
 ```
+[Readme generator.webm](https://github.com/user-attachments/assets/3d646cae-6c19-4267-8a13-c9a82188663b)
+
 ## License
     This project is licensed under the MIT License.
 
